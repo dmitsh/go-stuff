@@ -9,4 +9,7 @@ type Worker interface {
 func main() {
 	var worker Worker = engine.NewIntEngine()
 	worker.Run()
+
+	worker = engine.NewCharEngine("qwertyuiop")
+	worker.Run()
 }
