@@ -16,27 +16,8 @@ type Iterator interface {
 	getNext() interface{}
 }
 
-// Working
 type BaseEngine struct {
-	engine Engine
-}
-
-func (e *BaseEngine) Run() {
-	fmt.Printf("Running %s engine\n", e.engine.getEngineName())
-
-	iter := e.engine.getIterator()
-
-	for iter.hasNext() {
-		fmt.Printf("%v,", iter.getNext())
-	}
-	fmt.Printf("\n")
-}
-
-// Not working
-
-/*
-type BaseEngine struct {
-	 Engine
+	Engine
 }
 
 func (e *BaseEngine) Run() {
@@ -49,6 +30,3 @@ func (e *BaseEngine) Run() {
 	}
 	fmt.Printf("\n")
 }
-
-
-*/

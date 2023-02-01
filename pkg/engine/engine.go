@@ -12,7 +12,7 @@ func NewIntEngine() *IntEngine {
 		start:  0,
 		length: 10,
 	}
-	e.engine = e
+	//e.engine = e
 	return e
 }
 
